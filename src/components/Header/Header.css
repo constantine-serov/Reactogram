@@ -1,0 +1,62 @@
+/* Блок с фильтрами изображений других пользователей ========================================================================== */
+  
+.img-filters {
+  padding: 20px 0;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+  }
+  
+.img-filters--inactive {
+  opacity: 0;
+}
+  
+.img-filters__button {
+    padding: 5px 15px;
+  
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: auto;
+    text-transform: uppercase;
+  
+    cursor: pointer;
+    background-color: #232321;
+    border: none;
+}
+  
+.img-filters__button:active,
+.img-filters__button--active {
+  color: #ff4e4e;
+  
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+  
+  .img-filters__label {
+    padding: 5px 15px;
+  
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: auto;
+  
+    cursor: pointer;
+  }
+  
+  .img-filters__radio:focus + .img-filters__label {
+    outline: auto 5px highlight;
+  }
+  
+  .img-filters__radio:checked + .img-filters__label {
+    color: #ff4e4e;
+    text-decoration: none;
+  
+    background-color: #ffffff;
+    border-radius: 2px;
+  }

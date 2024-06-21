@@ -1,0 +1,87 @@
+/* ======================== Подвал сайта ==================== */
+
+.page-footer {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: solid 1px #cccccc;
+}
+
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-align: start;
+     -ms-flex-align: start;
+        align-items: flex-start;
+
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+
+
+/* Копирайт Академии */
+
+.copyright {
+  font-size: 12px;
+}
+
+.copyright__link--image:hover,
+.copyright__link--image:focus {
+  opacity: 0.6;
+}
+
+.copyright__link--text {
+  color: #ffffff;
+}
+
+.copyright__link--text:hover,
+.copyright__link--text:focus {
+  opacity: 0.6;
+}
+
+.page-footer__contacts {
+  background-color: inherit;
+}
+
+/* Ссылки на социальные сети */
+
+.contacts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contacts__link {
+  display: block;
+
+  width: 29px;
+  height: 29px;
+  margin-left: 10px;
+
+  font-size: 0;
+
+  background-image: url("/src/assets/sprite.png");
+  background-repeat: no-repeat;
+
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.contacts__link:hover,
+.contacts__link:focus {
+  opacity: 1;
+}
+
+.contacts__link--twitter {
+  background-position: -5px -270px;
+}
+
+.contacts__link--vk {
+  background-position: -5px -309px;
+}
